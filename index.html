@@ -1,4 +1,3 @@
-<!doctype html>
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,17 +5,18 @@
 	<link rel="stylesheet" href="css/960_12_col.css">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/text.css">
-	<link rel="stylesheet" href="css/style.css">
-	<title>My Website</title>
-	<link rel="icon" type="image/png" href="image/icon.png">
+	<link rel="stylesheet" href="css/style-min.css">
+	<title>Dude Fiber</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
 	<header id="header">
 		<div class="container_12">
+			<!-- Logo placeholder -->
 			<div class="grid_4">
 				<h1>Dude Fiber</h1>
 			</div>
+			<!-- Menu` -->
 			<div>
 				<nav class="grid_8">
 					<ul>
@@ -25,30 +25,34 @@
 						<li><a href="#">Coverage</a></li>
 						<li><a href="#">About Us</a></li>
 					</ul>
-				</nav
+				</nav>
 			</div>
 		</div>
 	</header>
-	<div id="landing-wrapper"><p id="imagetext">A new kind of Internet</p></div>
+	<!-- Hero element with image as backgroud added in style.css -->
+	<div id="landing-wrapper">
+		<p id="imagetext">A new kind of Internet</p>
+	</div>
+	<!-- 3 columns meantioning the features -->
 	<article id="features">
     <div class="container_12 ">
     	<div class="grid_4">
     		<h3>Flash Speeds</h3>
-    		<img id="threeimg" src="img/speed.png" />
+    		<img class="threeimg" src="img/speed1.png" alt="speedtest" />
     		<p>With Fiber you get speeds that download content before you blink and that too with 100% uptime. The whole world comes to you so you will never want to leave your home.
     		</p>	
     		</br>
     	</div>
     	<div class="grid_4">
     		<h3>Mirror on big screen.</h3>
-    		<img id="threeimg" src="img/cast-1.jpg" />
+    		<img class="threeimg" src="img/cast-1.jpg" alt="cast to tv" />
     		<p>See exactly what’s on your Android mobile device by casting your mobile screen to the TV. Or mirror any website in a Chrome browser from your laptop to the big screen.
     		</p>
     		</br>
     	</div>
     	<div class="grid_4">
     		<h3>Crystal clear HDTV</h3>
-    		<img id="threeimg" src="img/hdtv.jpg" />
+    		<img class="threeimg" src="img/hdtv.jpg" alt="Enjoy tv in HD" />
     		<p>With a fiber connection, a bigger pipe means less compression. Our network has the bandwidth to bring you HD in all its glory.
     		</p>
     		</br>
@@ -56,30 +60,90 @@
     	
     </div>
     </article>
+    <!-- 2 columns about device availability -->
     <article id="devices">
  	<div class="container_12">
  		<div class="grid_6">
- 			<img id="part" src="image/partners.jpg" alt="partners"/>
+ 			<img id="alldevice" src="img/device.png" alt="All devices"/>
  		</div>
+ 		<!-- column divided in 3 rows -->
  		<div class="grid_6">
  		
- 		<div class="available">
- 		<h2>Available on</h2>
+ 			<div class="available">
+ 			<h2>A better way to control and watch the TV you love</h2>
  	
-			<p class="dialogue">Play Store</p>
+			<p>Control your TV from your smartphone or tablet. Watch some of your favorite TV channels live or On Demand in your home or on your mobile device.</p>
 		
+ 			</div>
+ 			<div class="store1">		
+				<a href="#"><img src="img/button-google-play.png" alt="Play Store" /></a>
+ 			</div>
+ 			<div class="store2"> 	
+				<a href="#"><img src="img/button-appstore.png" alt="App Store" /></a>
+ 			</div>
  		</div>
- 		<div class="testimonial">
- 		
-			<p class="dialogue">App store</p>
-				
+ 	</div>
+ 	</article>
+ 	<!-- Contact Us form -->
+ 	<article id="contact">
+ 	<div class="container_12">
+ 		<div class="grid_6">
+ 			<div class="form">
+				<h2>Contact Us</h2>
+				<form>
+					<label for="fname">Full Name</label>
+					<input type="text" id="fname" name="fname">
+					<label for="lname">Email address</label>
+					<input type="text" id="lname" name="lname">
+					<label for="lname">Message</label>
+					<textarea></textarea>
+					<button class="button">Submit</button>
+				</form>
+			</div>
  		</div>
- 		<div class="testimonial">
- 	
-			<p class="dialogue">Widjsabjdjvasbdchansmcnb asgcjvbsaknndows is not cool</p>
-	
+ 		<div class="grid_6">
+ 			<img id="phone" src="img/phone.png" alt="All devices"/>
  		</div>
- 		</div>
- 		</article>  
+ 	</div>
+ 	</article>
+ 	<!-- Footer -->
+ 	<footer id="foot">
+ 		<div class="container_12">
+ 			<div class="grid_3">
+ 				<p class="footer-title">GET FIBER</p>
+ 				<ul class="footer-link">
+ 					<li class="footer-item"><a href="#">Residential Service</a></li>
+ 					<li class="footer-item"><a href="#">Small Business</a></li>
+ 					<li class="footer-item"><a href="#">Large Business</a></li>
+ 				</ul>
+ 			</div>
+ 			<div class="grid_3">
+ 				<p class="footer-title">EXPLORE</p>
+ 				<ul class="footer-link">
+ 					<li class="footer-item"><a href="#">Why speed matters</a></li>
+ 					<li class="footer-item"><a href="#">Community impact</a></li>
+ 					<li class="footer-item"><a href="#">Expansion plans</a></li>					
+ 				</ul>
+ 			</div>
+ 			<div class="grid_3">
+ 				<p class="footer-title">SOCIAL MEDIA</p>
+ 				<ul class="footer-link">
+ 					<li class="footer-item"><a href="#">Google+</a></li>
+ 					<li class="footer-item"><a href="#">Facebook</a></li>
+ 					<li class="footer-item"><a href="#">Twitter</a></li>
+ 					<li class="footer-item"><a href="#">Youtube</a></li>
+ 				</ul>
+ 			</div>
+ 			<div class="grid_3">
+ 				<p class="footer-title">ADDRESS</p>
+ 				<ul class="footer-link">
+ 					<li class="footer-item">123,</li>
+ 					<li class="footer-item">Dude Building,</li>
+ 					<li class="footer-item">Bangalore</li>
+ 					<li class="footer-item">560029</li>					
+ 				</ul>
+ 			</div>
+ 		</div> 		
+ 	</footer>
 </body>
 </html>
